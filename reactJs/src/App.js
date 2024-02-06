@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter ">
-      <p className="text-white text-xl">BrainWaveHub</p>
+      
       <Routes>
         <Route path="/" element={<Home/>}> </Route>
       </Routes>
