@@ -1,7 +1,9 @@
 // rafc
 import React from 'react';
+import Banner from "../assets/Images/banner.mp4"
 import {FaArrowRight} from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import CodeBlocks from '../comopnents/core/HomePage/CodeBlocks';
 import CTAbutton from "../comopnents/core/HomePage/Button";
 import HighLightText from '../comopnents/core/HomePage/HighLightText';
 const Home = () => {
@@ -48,6 +50,41 @@ const Home = () => {
           </CTAbutton>
           
         </div>
+
+        <div className='mx-8 my-12 shadow-blue-200'>
+          <video muted loop autoPlay>
+            <source src={Banner} type="video/mp4" />
+          </video>
+        </div>
+
+        {/* code section 1 */}
+        
+        <CodeBlocks 
+                position={"lg:flex-row"}
+                heading={
+                  <div className='text-4xl font-semibold'>
+                    Unlock Your
+                    <HighLightText text={"coding potential"} />
+                    with our online courses
+                  </div>
+                }
+                ctabtn1={
+                  {
+                  btnText: "try it yourself",
+                  linkto: "/signup",
+                  active: true,
+                  }
+                }
+                ctabtn2={
+                  {
+                  btnText: "learn more",
+                  linkto: "/login",
+                  active: false,
+                  }
+                }
+              
+        ></CodeBlocks>
+
 
 
 
