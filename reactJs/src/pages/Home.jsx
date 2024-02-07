@@ -3,9 +3,9 @@ import React from 'react';
 import Banner from "../assets/Images/banner.mp4"
 import {FaArrowRight} from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import CodeBlocks from '../comopnents/core/HomePage/CodeBlocks';
-import CTAbutton from "../comopnents/core/HomePage/Button";
-import HighLightText from '../comopnents/core/HomePage/HighLightText';
+import CodeBlocks from '../components/core/HomePage/CodeBlocks';
+import CTAbutton from "../components/core/HomePage/Button";
+import HighLightText from '../components/core/HomePage/HighLightText';
 const Home = () => {
   return (
     <div>
