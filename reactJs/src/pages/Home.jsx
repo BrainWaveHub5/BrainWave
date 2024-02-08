@@ -82,7 +82,7 @@ const Home = () => {
                   active: false,
                   }
                 }
-              
+
         ></CodeBlocks>
 
 

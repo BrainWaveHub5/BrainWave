@@ -1,9 +1,10 @@
 import React from 'react'
 import CTAButton from "./Button";
 import {FaArrowRight} from "react-icons/fa"
+import {TypeAnimation} from "react-type-animation"
 
 const CodeBlocks = ({
-  position, heading, subheading, ctabtn1, ctabtn2, codeblok,
+  position, heading, subheading, ctabtn1, ctabtn2, codeblock,
   backgroundGredient, codeColor
 }) => {
   return (
@@ -30,8 +31,6 @@ const CodeBlocks = ({
             </div>
           </CTAButton>
         </div>
-
-    
 
       </div>
     </div>
