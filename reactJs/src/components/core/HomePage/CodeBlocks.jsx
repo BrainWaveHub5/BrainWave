@@ -36,12 +36,13 @@ const CodeBlocks = ({
         </div>
       </div>
 
-        <div className='relative h-fit flex flex-row text-[16px] w-[90%] py-4 lg:w-[500px]'>
-          <div className={`absolute h-20 w-[200px] ${backgroundGredient} blur-[110px] `}>
+        <div className='relative h-fit flex flex-row text-[16px] w-[90%] py-4 lg:w-[500px] shadow-[#50d71e] '>
+          <div className={`absolute  h-40 w-[200px] ${backgroundGredient} blur-[140px] `}>
 
           </div>
-
-          <div className='absolute flex flex-row'>
+         
+          <div className='absolute p-2 flex flex-row bg-gradient-to-r from-[#0E1A2D3D] to-[#111E3261] 
+                         '>
               <div className=' text-center flex flex-col w-[20px] mr-4 
                               text-richblack-400 font-inter font-bold'>
                 <p>1</p>
@@ -54,6 +55,7 @@ const CodeBlocks = ({
                 <p>8</p>
                 <p>9</p>
                 <p>10</p>
+                <p>11</p>
                 
               </div>
               <div className=''>

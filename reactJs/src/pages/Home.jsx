@@ -52,7 +52,10 @@ const Home = () => {
         </div>
 
         <div className='mx-8 my-12 shadow-blue-200 '>
-          <video muted loop autoPlay>
+          <video 
+          muted 
+          loop 
+          autoPlay>
             <source src={Banner} type="video/mp4" />
           </video>
         </div>
@@ -64,7 +67,7 @@ const Home = () => {
                 heading={
                   <div className='text-4xl font-semibold'>
                     Unlock Your
-                    <HighLightText color={"text-richblue-200"} text={"coding potential"} /> <br/>
+                    <HighLightText  text={"coding potential"} /> <br/>
                     with our online courses
                   </div>
                 }
@@ -94,7 +97,7 @@ const Home = () => {
                 heading={
                   <div className='text-4xl font-semibold'>
                     Start 
-                    <HighLightText color={"text-blue-100"} text={"coding in seconds"} /> <br />
+                    <HighLightText  text={"coding in seconds"} /> <br />
                 
                   </div>
                 }
