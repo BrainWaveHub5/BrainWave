@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CTAButton from "./Button";
 import {FaArrowRight} from "react-icons/fa"
 import {TypeAnimation} from "react-type-animation"
+
 
 const CodeBlocks = ({
   position, heading, subheading, ctabtn1, ctabtn2, codeblock,
   backgroundGredient, codeColor
 }) => {
+
+
   return (
-    <div className={`flex ${position} my-20 justify-between gap-10`}>
+    <div className={`flex ${position} flex-row my-20 justify-between gap-10`}>
       {/*section 1*/}
       <div className='w-[50%] flex flex-col gap-8'> 
         {heading}
@@ -31,9 +34,51 @@ const CodeBlocks = ({
             </div>
           </CTAButton>
         </div>
-
       </div>
-    </div>
+
+        <div className='relative h-fit flex flex-row text-[16px] w-[90%] py-4 lg:w-[500px]'>
+          <div className={`absolute h-20 w-[200px] ${backgroundGredient} blur-[110px] `}>
+
+          </div>
+
+          <div className='absolute flex flex-row'>
+              <div className=' text-center flex flex-col w-[20px] mr-4 
+                              text-richblack-400 font-inter font-bold'>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+                
+              </div>
+              <div className=''>
+                  <div  className={`w-[450px] flex flex-col gap-2 font-bold font-mono ${codeColor} pr-2 `}>
+                    <TypeAnimation
+                    sequence={[codeblock, 1000, ""]}
+                    repeat={Infinity}
+                    cursor={true}
+                    style={{
+                      
+                      whiteSpace: 'pre-line',
+                      wordBreak:'break-all'
+                    }}
+                    omitDeletionAnimation={true}
+                    />
+                  </div>
+              </div>
+              
+          </div>
+          
+        </div>
+
+        
+      </div>
+    
   )
 }
 

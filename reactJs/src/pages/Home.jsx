@@ -51,7 +51,7 @@ const Home = () => {
           
         </div>
 
-        <div className='mx-8 my-12 shadow-blue-200'>
+        <div className='mx-8 my-12 shadow-blue-200 '>
           <video muted loop autoPlay>
             <source src={Banner} type="video/mp4" />
           </video>
@@ -64,7 +64,7 @@ const Home = () => {
                 heading={
                   <div className='text-4xl font-semibold'>
                     Unlock Your
-                    <HighLightText text={"coding potential"} />
+                    <HighLightText color={"text-richblue-200"} text={"coding potential"} /> <br/>
                     with our online courses
                   </div>
                 }
@@ -82,6 +82,40 @@ const Home = () => {
                   active: false,
                   }
                 }
+              codeblock={`<!DOCTYPE html>\n<html>\n<head><title>Example</title><linkrel="stylesheet"href="styles.css">\n</head>\n<body>\n<h1>Hello, World!</h1>\n<h2>Namaste doston </h2>\n<h2> ki haal paji </h2>\n</body>\n</html>`}
+              codeColor = {"text-orange-5"}
+              backgroundGredient={"bg-yellow-25"}
+              subheading={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
+
+        ></CodeBlocks>
+
+          <CodeBlocks 
+                position={"lg:flex-row-reverse"}
+                heading={
+                  <div className='text-4xl font-semibold'>
+                    Start 
+                    <HighLightText color={"text-blue-100"} text={"coding in seconds"} /> <br />
+                
+                  </div>
+                }
+                ctabtn1={
+                  {
+                  btnText: "Continue Lesson",
+                  linkto: "/signup",
+                  active: true,
+                  }
+                }
+                ctabtn2={
+                  {
+                  btnText: "learn more",
+                  linkto: "/login",
+                  active: false,
+                  }
+                }
+              codeblock={`<!DOCTYPE html>\n<html>\n<head><title>Example</title><linkrel="stylesheet"href="styles.css">\n</head>\n<body>\n<h1>Hello, World!</h1>\n<h2>Namaste doston </h2>\n<h2> ki haal paji </h2>\n</body>\n</html>`}
+              codeColor = {"text-blue-100"}
+              backgroundGredient={"bg-blue-300"}
+              subheading={"Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."}
 
         ></CodeBlocks>
 
