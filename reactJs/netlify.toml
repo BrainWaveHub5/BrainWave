@@ -1,0 +1,5 @@
+[build]
+  command = "npm run build && npm start"
+  functions = "functions"
+  publish = "build"
+  # Other directories if needed
