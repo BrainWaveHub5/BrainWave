@@ -6,7 +6,7 @@ import LoginForm from "./LoginForm"
 import SignupForm from "./SignupForm"
 
 function Template({title,description1,description2,image,formType}){
-    const {loading} =useSelector((state)=>state.auth)
+    // const {loading} =useSelector((state)=>state.auth)
 
     return (
         <div className="grid min-h-[calc(100vh-3.5rem)] place-item-center">
